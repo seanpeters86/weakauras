@@ -1,5 +1,6 @@
 # weakauras
 
-## 10.1 To-Be-Released
-- Balance Druid
-- Shadow Priest
+## 10.2
+
+To be released:
+- TBD
