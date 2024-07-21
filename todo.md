@@ -19,22 +19,7 @@ Tranquil Air Totem
 Ancestral Defense
 Surging Shields
 Swirling Currents
-
-## Elemental
-New Talent: Earthen Rage – Your damage spells incite the earth around you to come to your aid for 6 seconds, repeatedly dealing Nature damage to your most recently attacked target.
-New Talent: Echo of the Elementals – When your Storm Elemental or Fire Elemental expires, it leaves behind a lesser Elemental to continue attacking your enemies for 15 seconds.
-New Talent: Fury of the Storms – Activating Stormkeeper summons a powerful Lightning Elemental to fight by your side for 8 seconds.
-
-## Enhancement
-Maelstrom Weapon is now learned at level 10 and has been removed from the Class tree.
-Feral Lunge is now learned at level 14 and has been removed from the Enhancement tree.
-Flurry moved from Class tree to the Enhancement tree.
-Elemental Blast damage reduced by 25%.
-The following talents have been removed:
-Windfury Totem
-Focused Insight
-Refreshing Waters
-Flurry moved from Class tree to the Enhancement tree.
+Mana Spring Totem
 
 ## Restoration
 New Talent: Tidewaters – When you cast Healing Rain, each ally with your Riptide on them is healed.
