@@ -1,11 +1,50 @@
 # Death Knight
+- update load conditions
+- new: Subduing Grasp
+- rework: Blood Draw
 
+The following talents have been removed:
+Might of Thassarian
+Merciless Strikes
+Clenching Grasp
+Empower Rune Weapon
+Rune of Hysteria
 
-# Blood
+## Frost
+- check Razorice stack tracking
+- new: Cryogenic Chamber
+- new: Smothering Offense
+- new: Hyperpyrexia (probably dont track)
+- rework: Frostscythe
+- baseline: Rime
+- rework: Killing Machine (stacks 1 additional time)
 
+The following talents have been removed:
+Fatal Fixation
+Cold Blooded-Rage
+Invigorating Freeze
 
-# Frost
+## Unholy
+- new: Doomed Bidding -> Magus of the Dead
+- new: Raise Abomination -> replaces Army of the Dead
+- new: Festering Scythe
+- baseline: Epidemic
+- baseline: Outbreak
+- Sudden Doom should be fully tracked
+- check Festermight stacks
+- rework: Unholy Blight
 
+The following talents have been removed:
+Replenishing Wounds
+Army of the Damned
+Unholy Command
+Feasting Strike
+Decomposition now functions with Gargoyle.
 
-# Unholy
+# Rogue
 
+## Assassination
+
+## Outlaw
+
+## Subtlety
