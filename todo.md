@@ -1,3 +1,8 @@
+# All
+- upload to wago
+- update weak aura description in aura and on wago
+- record .gif
+
 # Death Knight
 - update load conditions
 - new: Subduing Grasp
@@ -10,20 +15,6 @@ Clenching Grasp
 Empower Rune Weapon
 Rune of Hysteria
 
-## Frost
-- check Razorice stack tracking
-- new: Cryogenic Chamber
-- new: Smothering Offense
-- new: Hyperpyrexia (probably dont track)
-- rework: Frostscythe
-- baseline: Rime
-- rework: Killing Machine (stacks 1 additional time)
-
-The following talents have been removed:
-Fatal Fixation
-Cold Blooded-Rage
-Invigorating Freeze
-
 ## Unholy
 - new: Doomed Bidding -> Magus of the Dead
 - new: Raise Abomination -> replaces Army of the Dead
@@ -33,6 +24,7 @@ Invigorating Freeze
 - Sudden Doom should be fully tracked
 - check Festermight stacks
 - rework: Unholy Blight
+- check if Empower Rune Weapon is in spec tree
 
 The following talents have been removed:
 Replenishing Wounds
