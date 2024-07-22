@@ -4,9 +4,8 @@
 - remove swiftmend for non-resto
 - add Forestwalk
 
-## Feral
-- new: Coiled to Spring
-- rework: Sabertooth
+## Guardian
+- Check Protector of hte Pack
 
 ## Restoration
 New Talent: Dream of Cenarius – While Heart of the Wild is active, Wrath and Shred transfer 150% of their damage and Starfire and Swipe transfer 100% of their damage into healing onto a nearby ally.
