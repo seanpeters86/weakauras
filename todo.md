@@ -42,9 +42,22 @@ Feasting Strike
 Decomposition now functions with Gargoyle.
 
 # Rogue
+- update load conditions
+- rework: Acrobatic Strikes
+- baseline: Cut to the Chase 
+- removed: Nightstalker
 
 ## Assassination
+- new: Sanguine Stratagem - 1 new combat point
+- rework: Serrated Bone Spike
+- 
+The following talents have been removed:
+- Sepsis
+- Venom Rush
 
 ## Outlaw
+Sepsis has been removed.
 
 ## Subtlety
+- rework: Premeditation - After entering Stealth, your next combo point generating ability generates full combo points.
+- Shadow Dance moved from the Class talent tree to Subtlety talent tree.
