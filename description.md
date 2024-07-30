@@ -23,3 +23,17 @@ All of this is highly configurable, and you can move around any of the groups if
 You can adjust the custom grid settings if you would prefer a different configuration.
 
 Several auras inside of the `Buffs` group might be disabled by default (`Load` tab -> `Never`). Feel free to tweak these based on the buffs that are most important for you to track. I have made some baseline assumptions but am by no means an expert in every spec.
+
+## Adding the Fourth Row
+By default only the first 17 icons to load will be shown in the Grid. If you would like to expand this to include more icons you can follow the steps below.
+
+If you would like to add an additional row of icons you can edit the `CustomGrow` code inside the `Grid` group.
+
+1. Select the `Grid - Spec` group
+2. Navigate to the `Group` tab
+3. Expand the `Custom Grow` Lua code
+4. change `local rows = 3` to `local rows = 4`
+5. change `local total = 17` to `local rows = 22`
+6. Click `Done` in the bottom right
+
+This will add a fourth row of icons with up to 5 additional slots.
