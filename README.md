@@ -1,6 +1,8 @@
 # weakauras
 
-## 10.2
+## 11.0.2
 
 To be released:
-- TBD
+- Shadow Priest
+- Discipline Priest
+- Holy Priest
