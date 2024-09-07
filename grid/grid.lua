@@ -17,21 +17,24 @@ function(newPositions, activeRegions)
     local missingIcons = 0;
     local missingPadding = 0;
     local rowCount = 1;
+    local reduced = 0;
     
-    if total > 22 then
+    local totalActiveIcons = 0
+    for _ in pairs(activeRegions) do totalActiveIcons = totalActiveIcons + 1 end
+    
+    if totalActiveIcons > 22 then
         rowCount = 5
-    elseif total > 17 then
+    elseif totalActiveIcons > 17 then
         rowCount = 4
-    elseif total > 11 then
+    elseif totalActiveIcons > 11 then
         rowCount = 3
-    elseif total > 5 then
+    elseif totalActiveIcons > 5 then
         rowCount = 2
     end
     
     if #activeRegions < total then
         missingIcons = total - #activeRegions; 
     end
-    
     
     for i, regionData in ipairs(activeRegions) do
         -- first row has 5 and smaller spacing
@@ -44,6 +47,13 @@ function(newPositions, activeRegions)
         else
             limit = 5;
             spacing = 2.5;
+        end
+        
+        -- check if missingIcons has a whole row in it
+        if (reduced == 0) and (missingIcons >= limit) then
+            missingIcons = missingIcons - limit;
+            -- Only ever do this once
+            reduced = 1
         end
         
         local region = regionData.region
@@ -71,8 +81,8 @@ function(newPositions, activeRegions)
             activeRegions[i].region:SetRegionHeight(35);
             activeRegions[i].region:SetRegionWidth(35);
             -- If you have less icons than the total adjust their xOffset so they are centered
-            if yCount == rowCount-1 then
-                --print("yCount: " .. yCount .. " rowCount: " .. rowCount)
+            if (yCount == rowCount-1) then
+                -- print("yCount: " .. yCount .. " rowCount: " .. rowCount)
                 missingPadding = missingIcons * 20;
             end
         else 
@@ -80,7 +90,6 @@ function(newPositions, activeRegions)
             activeRegions[i].region:SetRegionWidth(40);
             missingPadding = 0
         end
-        
         
         xOffset = 0 - (region.width + spacing) / 2 * (rowTotal-1) + (xCount * (region.width + spacing)) + missingPadding;
         yOffset = 0 - (region.height + spacing + rowPadding) * yCount -- change '-' to '+' after 0 to grow up instead of down
@@ -114,4 +123,3 @@ function(newPositions, activeRegions)
         newPositions[i] = {xOffset, yOffset}
     end
 end
-
