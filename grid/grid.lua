@@ -49,8 +49,8 @@ function(newPositions, activeRegions)
             spacing = 2.5;
         end
         
-        -- check if missingIcons has a whole row in it
-        if (reduced == 0) and (missingIcons >= limit) then
+        -- check if missingIcons has a whole row in it        
+        if (reduced == 0) and (missingIcons > limit) then
             missingIcons = missingIcons - limit;
             -- Only ever do this once
             reduced = 1
@@ -82,13 +82,16 @@ function(newPositions, activeRegions)
             activeRegions[i].region:SetRegionWidth(35);
             -- If you have less icons than the total adjust their xOffset so they are centered
             if (yCount == rowCount-1) then
-                -- print("yCount: " .. yCount .. " rowCount: " .. rowCount)
                 missingPadding = missingIcons * 20;
             end
         else 
             activeRegions[i].region:SetRegionHeight(40);
             activeRegions[i].region:SetRegionWidth(40);
-            missingPadding = 0
+            if (yCount == rowCount-1) then
+                missingPadding = missingIcons * 10;
+            else
+                missingPadding = 0;
+            end
         end
         
         xOffset = 0 - (region.width + spacing) / 2 * (rowTotal-1) + (xCount * (region.width + spacing)) + missingPadding;
