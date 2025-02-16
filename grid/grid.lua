@@ -82,7 +82,7 @@ function(newPositions, activeRegions)
             activeRegions[i].region:SetRegionWidth(35);
             -- If you have less icons than the total adjust their xOffset so they are centered
             if (yCount == rowCount-1) then
-                missingPadding = missingIcons * 20;
+                missingPadding = missingIcons * 19.5;
             end
         else 
             activeRegions[i].region:SetRegionHeight(40);
@@ -99,7 +99,7 @@ function(newPositions, activeRegions)
         
         -- Apply more padding between the 1st and 2nd rows to account for the resource bar
         if yCount > 0 then
-            yOffset = yOffset - 26.5;
+            yOffset = yOffset - 26;
         end
         
         -- Apply an extra offset to everything after row 1
