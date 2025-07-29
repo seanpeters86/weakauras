@@ -54,6 +54,10 @@ function(newPositions, activeRegions)
             missingIcons = missingIcons - limit;
             -- Only ever do this once
             reduced = 1
+            
+            if missingIcons == 1 then
+                missingIcons = 0;
+            end
         end
         
         local region = regionData.region
@@ -88,7 +92,7 @@ function(newPositions, activeRegions)
             activeRegions[i].region:SetRegionHeight(40);
             activeRegions[i].region:SetRegionWidth(40);
             if (yCount == rowCount-1) then
-                missingPadding = missingIcons * 10;
+                missingPadding = missingIcons * 12;
             else
                 missingPadding = 0;
             end
